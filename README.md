@@ -109,4 +109,3 @@ NutriVidaPython/
    * 1 Reporte con agrupaciones/clasificaciones.
    * 1 Reporte de valores calculados/acumulados (`reduce`).
    * 1 Reporte combinado relacional.
-```
