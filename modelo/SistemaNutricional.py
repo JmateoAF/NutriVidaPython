@@ -1,6 +1,5 @@
 from modelo.Alimento import Alimento
 from modelo.Persona import Persona
-from modelo.RegistroConsumo import RegistroConsumo
 
 
 class SistemaNutricional:
@@ -11,7 +10,6 @@ class SistemaNutricional:
         self.consumos = consumos
         #Para representar composicion
         self.objetoPersona = Persona(cedula, nombrePersona, edad, peso, estatura, metaCaloricaDiaria)
-        self.objetoRegistroConsumo = RegistroConsumo(fecha, cantidadPorciones)
         self.objetoAlimento = Alimento(codigo, nombreAlimento, calorias, proteinas, carbohidratos, grasas)
 
     def serializarDatos(self):
