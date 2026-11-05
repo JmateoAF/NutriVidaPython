@@ -15,7 +15,7 @@ NutriVida es un sistema informático desarrollado bajo la arquitectura **Modelo-
 
 ## Requisitos Previos
 
-* **Python 3.10+** instalado en el sistema.
+* **Python 3.14.8+** instalado en el sistema.
 * **Git** configurado.
 * *(Solo en Linux)* Paquetes de dependencias del sistema para PyQt6:
   ```
