@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -14,14 +17,23 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QPushButton" name="btnGuardar">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>180</y>
+      <x>20</x>
+      <y>260</y>
       <width>88</width>
       <height>27</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>PushButton</string>
@@ -34,10 +46,34 @@
      <x>0</x>
      <y>0</y>
      <width>542</width>
-     <height>24</height>
+     <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">#menubar{
+	background-color: rgb(153, 193, 241);
+}
+
+QMenuBar::item { padding: 6px 12px; border-right: 1px solid #cfe5d9; }</string>
+   </property>
+   <widget class="QMenu" name="menuPersonas">
+    <property name="title">
+     <string>Personas</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuReportes">
+    <property name="title">
+     <string>Reportes</string>
+    </property>
+   </widget>
+   <addaction name="menuPersonas"/>
+   <addaction name="menuReportes"/>
   </widget>
+  <action name="actionxd">
+   <property name="text">
+    <string>xd</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
